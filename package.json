@@ -1,0 +1,16 @@
+{
+  "name": "paypal-ruby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate:openapi": "p2o ./PayPal.postman_collection.json -f ./PayPal.yml",
+    "generate:ruby": "openapi-generator-cli generate -g ruby -o out -i PayPal.yml --skip-validate-spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "postman-to-openapi": "^3.0.1"
+  }
+}
