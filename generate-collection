@@ -2,4 +2,4 @@
 
 curl -H "X-Api-Key: $POSTMAN_API_KEY" \
   --location https://api.getpostman.com/collections/$POSTMAN_COLLECTION_ID \
-  > postman.json
+  > build/postman.json

@@ -30,7 +30,7 @@ cp .env.example .env
 
 ### Start the Container
 ```
-docker run --rm -it --env-file .env --entrypoint bash postman-collection-client-generator
+docker run --rm -it -v "$PWD/build:/app/build" --env-file .env --entrypoint bash postman-collection-client-generator
 ```
 
 ### Download the Postman collection
@@ -50,3 +50,5 @@ docker run --rm -it --env-file .env --entrypoint bash postman-collection-client-
 ```
 ./generate-client
 ```
+
+All the output is stored in the `build/` directory.
