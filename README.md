@@ -35,5 +35,5 @@ docker run --rm -it --env-file .env --entrypoint bash postman-collection-client-
 ### Generate the Client
 
 ```
-@openapitools/openapi-generator-cli generate -i openapi.yaml -g ruby -o /tmp/test/
+./generate-client
 ```
