@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./node_modules/.bin/p2o ./postman.json -f ./openapi.yml

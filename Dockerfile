@@ -5,3 +5,4 @@ RUN apt-get update -y && \
 WORKDIR /app
 COPY package* .
 RUN npm install
+COPY . .
