@@ -28,7 +28,7 @@ cp .env.example .env
 # and then edit the values
 ```
 
-### Enter the Container
+### Start the Container
 ```
 docker run --rm -it --env-file .env --entrypoint bash postman-collection-client-generator
 ```
@@ -36,7 +36,7 @@ docker run --rm -it --env-file .env --entrypoint bash postman-collection-client-
 ### Download the Postman collection
 
 ```
-./get-collection
+./generate-collection
 ```
 
 ### Generate the Open API spec
