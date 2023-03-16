@@ -45,10 +45,23 @@ docker run --rm -it -v "$PWD/build:/app/build" --env-file .env --entrypoint bash
 ./generate-openapi
 ```
 
+You'll probably need to hand edit a few things here, or add `--skip-validate-spec`
+
 ### Generate the Client
 
+This example generates a Ruby client. Any one of [these generators](https://openapi-generator.tech/docs/generators) will work.
+
 ```
-./generate-client
+./generate-client ruby
 ```
 
-All the output is stored in the `build/` directory.
+All the output is stored in the `build/` directory:
+
+```
+build/
+├── openapi.yml
+├── postman.json
+└── sdk/
+```
+
+By default, everything inside of `build/` is ignored (see `.gitignore`). Just a heads up.
