@@ -22,11 +22,11 @@ docker run --rm -it -v "$PWD/build:/app/build" --env-file .env --entrypoint bash
 ## Generate the OpenAPI spec file
 
 ```
-./generate-openapi
+./generate-openapi 
 ```
 
 ## Generate the Client
 
 ```
-./generate-client ruby
+./generate-client ruby -c build/config.yml
 ```

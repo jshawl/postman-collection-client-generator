@@ -1,0 +1,5 @@
+gemAuthor: Jesse Shawl
+gemAuthorEmail: jesse@jesse.sh
+gemDescription: A Hello-World GitHub REST API Ruby client
+gemName: github-rest-client
+moduleName: GitHub
