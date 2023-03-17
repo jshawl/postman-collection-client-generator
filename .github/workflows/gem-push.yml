@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 defaults:
   run:
-    working-directory: ./examples/github-rest-api-ruby-client
+    working-directory: ./examples/github-rest-api-ruby-client/build/sdk
 
 jobs:
   build:
