@@ -1,1 +1,1 @@
-FROM ghcr.io/jshawl/postman-collection-client-generator:main
+FROM ghcr.io/jshawl/postman-collection-client-generator:latest

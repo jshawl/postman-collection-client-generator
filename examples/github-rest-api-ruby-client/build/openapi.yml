@@ -1,0 +1,163 @@
+openapi: 3.0.0
+info:
+  title: GitHub Hello World
+  version: 1.0.0
+servers:
+  - url: https://api.github.com
+paths:
+  /users/jshawl:
+    get:
+      tags:
+        - default
+      summary: /users/{username}
+      responses:
+        '200':
+          description: OK
+          headers:
+            Server:
+              schema:
+                type: string
+                example: GitHub.com
+            Date:
+              schema:
+                type: string
+                example: Thu, 16 Mar 2023 13:55:24 GMT
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Cache-Control:
+              schema:
+                type: string
+                example: public, max-age=60, s-maxage=60
+            Vary:
+              schema:
+                type: string
+                example: Accept, Accept-Encoding, Accept, X-Requested-With
+            ETag:
+              schema:
+                type: string
+                example: >-
+                  W/"d19c3ce473447af721d230302e871e07d33bb552ca5ecfe687f9141d60a743b6"
+            Last-Modified:
+              schema:
+                type: string
+                example: Tue, 14 Mar 2023 20:20:24 GMT
+            X-GitHub-Media-Type:
+              schema:
+                type: string
+                example: github.v3; format=json
+            x-github-api-version-selected:
+              schema:
+                type: string
+                example: '2022-11-28'
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: >-
+                  ETag, Link, Location, Retry-After, X-GitHub-OTP,
+                  X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used,
+                  X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+                  X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type,
+                  X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Strict-Transport-Security:
+              schema:
+                type: string
+                example: max-age=31536000; includeSubdomains; preload
+            X-Frame-Options:
+              schema:
+                type: string
+                example: deny
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            X-XSS-Protection:
+              schema:
+                type: integer
+                example: '0'
+            Referrer-Policy:
+              schema:
+                type: string
+                example: origin-when-cross-origin, strict-origin-when-cross-origin
+            Content-Security-Policy:
+              schema:
+                type: string
+                example: default-src 'none'
+            Content-Encoding:
+              schema:
+                type: string
+                example: gzip
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '53'
+            X-RateLimit-Reset:
+              schema:
+                type: integer
+                example: '1678976444'
+            X-RateLimit-Resource:
+              schema:
+                type: string
+                example: core
+            X-RateLimit-Used:
+              schema:
+                type: integer
+                example: '7'
+            Accept-Ranges:
+              schema:
+                type: string
+                example: bytes
+            Content-Length:
+              schema:
+                type: integer
+                example: '480'
+            X-GitHub-Request-Id:
+              schema:
+                type: string
+                example: EE31:7588:18719:3238D:64131FCC
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                login: jshawl
+                id: 3824954
+                node_id: MDQ6VXNlcjM4MjQ5NTQ=
+                avatar_url: https://avatars.githubusercontent.com/u/3824954?v=4
+                gravatar_id: ''
+                url: https://api.github.com/users/jshawl
+                html_url: https://github.com/jshawl
+                followers_url: https://api.github.com/users/jshawl/followers
+                following_url: https://api.github.com/users/jshawl/following{/other_user}
+                gists_url: https://api.github.com/users/jshawl/gists{/gist_id}
+                starred_url: https://api.github.com/users/jshawl/starred{/owner}{/repo}
+                subscriptions_url: https://api.github.com/users/jshawl/subscriptions
+                organizations_url: https://api.github.com/users/jshawl/orgs
+                repos_url: https://api.github.com/users/jshawl/repos
+                events_url: https://api.github.com/users/jshawl/events{/privacy}
+                received_events_url: https://api.github.com/users/jshawl/received_events
+                type: User
+                site_admin: false
+                name: Jesse Shawl
+                company: null
+                blog: https://jesse.sh/
+                location: USA
+                email: null
+                hireable: null
+                bio: <https://jesse.sh/>
+                twitter_username: jshawl
+                public_repos: 577
+                public_gists: 154
+                followers: 181
+                following: 134
+                created_at: '2013-03-10T17:07:43Z'
+                updated_at: '2023-03-14T20:20:24Z'

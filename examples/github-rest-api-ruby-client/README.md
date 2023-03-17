@@ -1,13 +1,32 @@
 
-TODO: move collection id out of env var into userland.
+# GitHub REST API Ruby Client
 
-https://web.postman.co/workspace/My-Workspace~bf73ef6c-5e5b-4d85-801e-ae4fedb8dab2/example/51534-c49e59cf-3d48-43c6-bf90-993cc6299e79
-
+## Build the Image
 
 ```
 docker build . -t github-ruby-client:latest
 ```
 
+## Start the container
+
 ```
-docker run -it --entrypoint bash github-ruby-client:latest
+docker run --rm -it -v "$PWD/build:/app/build" --env-file .env --entrypoint bash github-ruby-client:latest
+```
+
+## Generate Collection JSON
+
+```
+./generate-collection
+```
+
+## Generate the OpenAPI spec file
+
+```
+./generate-openapi
+```
+
+## Generate the Client
+
+```
+./generate-client ruby
 ```
