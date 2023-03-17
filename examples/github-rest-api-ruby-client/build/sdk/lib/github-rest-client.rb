@@ -11,20 +11,20 @@ OpenAPI Generator version: 6.4.0
 =end
 
 # Common files
-require 'openapi_client/api_client'
-require 'openapi_client/api_error'
-require 'openapi_client/version'
-require 'openapi_client/configuration'
+require 'github-rest-client/api_client'
+require 'github-rest-client/api_error'
+require 'github-rest-client/version'
+require 'github-rest-client/configuration'
 
 # Models
 
 # APIs
-require 'openapi_client/api/default_api'
+require 'github-rest-client/api/default_api'
 
-module OpenapiClient
+module GitHub
   class << self
     # Customize default settings for the SDK using block.
-    #   OpenapiClient.configure do |config|
+    #   GitHub.configure do |config|
     #     config.username = "xxx"
     #     config.password = "xxx"
     #   end

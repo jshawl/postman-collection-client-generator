@@ -10,7 +10,7 @@ OpenAPI Generator version: 6.4.0
 
 =end
 
-module OpenapiClient
+module GitHub
   class ApiError < StandardError
     attr_reader :code, :response_headers, :response_body
 

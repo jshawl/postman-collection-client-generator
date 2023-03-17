@@ -12,7 +12,7 @@ OpenAPI Generator version: 6.4.0
 
 require 'cgi'
 
-module OpenapiClient
+module GitHub
   class DefaultApi
     attr_accessor :api_client
 

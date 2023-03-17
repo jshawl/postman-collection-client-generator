@@ -10,7 +10,7 @@ OpenAPI Generator version: 6.4.0
 
 =end
 
-module OpenapiClient
+module GitHub
   class Configuration
     # Defines url scheme
     attr_accessor :scheme

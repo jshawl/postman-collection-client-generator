@@ -1,4 +1,4 @@
-# OpenapiClient::DefaultApi
+# GitHub::DefaultApi
 
 All URIs are relative to *https://api.github.com*
 
@@ -17,15 +17,15 @@ All URIs are relative to *https://api.github.com*
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'github-rest-client'
 
-api_instance = OpenapiClient::DefaultApi.new
+api_instance = GitHub::DefaultApi.new
 
 begin
   # /users/{username}
   result = api_instance.users_jshawl_get
   p result
-rescue OpenapiClient::ApiError => e
+rescue GitHub::ApiError => e
   puts "Error when calling DefaultApi->users_jshawl_get: #{e}"
 end
 ```
@@ -43,7 +43,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => Object
-rescue OpenapiClient::ApiError => e
+rescue GitHub::ApiError => e
   puts "Error when calling DefaultApi->users_jshawl_get_with_http_info: #{e}"
 end
 ```

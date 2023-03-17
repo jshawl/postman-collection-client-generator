@@ -10,6 +10,6 @@ OpenAPI Generator version: 6.4.0
 
 =end
 
-module OpenapiClient
+module GitHub
   VERSION = '1.0.0'
 end
