@@ -28,5 +28,5 @@ docker run --rm -it -v "$PWD/build:/app/build" --env-file .env --entrypoint bash
 ## Generate the Client
 
 ```
-./generate-client ruby -c build/config.yml
+./generate-client ruby -c config.yml
 ```
